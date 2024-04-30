@@ -4,6 +4,32 @@
 #include <string>
 using std::string;
 
+struct song_data{
+  string file_name;
+  string song_name;
+  string genre;
+  int plays = 0;
+};
+
+enum genre_data{
+  POP,
+  ROCK,
+  RNB,
+};
+
+/**
+ * Read a string from the user
+ *
+ * @returns data for the loaded song
+ */
+song_data load_song();
+
+/**
+ * Read a string from the user
+ * @param loaded_song the song loaded by user
+ */
+void print_song(song_data loaded_song);
+
 /**
  * Read a string from the user
  *
