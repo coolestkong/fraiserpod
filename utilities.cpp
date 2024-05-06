@@ -36,9 +36,10 @@ int main_menu(){
     write_line("(1) - Load & Play Music");
     write_line("(2) - Stop Music");
     write_line("(3) - Load Song");
-    write_line("(4) - Play Loaded Song");
-    write_line("(5) - Print Song Details");
-    write_line("(6) - Main Menu");
+    write_line("(4) - Alter Song");
+    write_line("(5) - Play Loaded Song");
+    write_line("(6) - Print Song Details");
+    write_line("(7) - Main Menu");
     int input = read_integer("Please select a screen: ");
     input = integer_range(input);
     return input;
